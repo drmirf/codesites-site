@@ -1,5 +1,0 @@
-A_single[é]
-B_double[é]
-C_quad[\\u00e9]
-D_backslash_only[\\]
-E_tab[	]end
