@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://codesites.com.br/</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://codesites.com.br/servicos.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://codesites.com.br/segmentos.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://codesites.com.br/lp-contabilidade.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://codesites.com.br/lp-advocacia.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://codesites.com.br/portfolio.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://codesites.com.br/sobre.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://codesites.com.br/blog.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://codesites.com.br/blog-post.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://codesites.com.br/contato.html</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codesites.com.br/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://codesites.com.br/servicos.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codesites.com.br/segmentos.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codesites.com.br/lp-contabilidade.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codesites.com.br/lp-advocacia.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codesites.com.br/portfolio.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codesites.com.br/sobre.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codesites.com.br/contato.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codesites.com.br/blog.html</loc><lastmod>2026-06-14</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://codesites.com.br/blog-post.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://codesites.com.br/blog-site-lento.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://codesites.com.br/blog-refazer-site.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://codesites.com.br/blog-erro-seo.html</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
