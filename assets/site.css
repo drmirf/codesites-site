@@ -191,6 +191,12 @@ section{padding:5.5rem 0}
 .footer-fine{font-size:.85rem;color:rgba(255,255,255,.4);border-top:1px solid rgba(255,255,255,.12);
   padding-top:1.5rem;margin-top:3rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
 .footer-fine .mono{font-family:var(--f-mono)}
+.footer-org{margin:.9rem 0 0;font-size:.85rem}
+.footer-org a{color:rgba(255,255,255,.55)}
+.footer-org a:hover{color:#fff}
+/* card de serviço quando é link (home) */
+a.svc{color:inherit;text-decoration:none}
+a.svc:hover h3{color:var(--accent)}
 
 /* utils */
 .divider{height:1px;background:var(--line);border:0;margin:0}
@@ -277,3 +283,17 @@ section{padding:5.5rem 0}
     color:var(--ink);padding:1rem 0;border-bottom:1px solid var(--line)}
   .mobile-nav .btn{margin-top:1.5rem;width:100%;justify-content:center}
 }
+
+/* ===================== BOTÃO WHATSAPP (verde acessível) =====================
+   Qualquer botão que leva ao WhatsApp fica verde, em todo o site.
+   Contraste WCAG 2.1 AA verificado: branco sobre #008069 = 4,89:1 (passa);
+   hover #006A58 = 6,56:1 (mais escuro = feedback consistente, também AA).
+   O verde-logo #25D366 reprova com branco (1,98:1), por isso NÃO é usado.
+   Seletor por atributo cobre qualquer link wa.me (independe da classe do botão).
+   Ao mudar estas cores, rodar 04-ativos-marca/site-codesites/qa-contraste.py. */
+.btn[href*="wa.me"]{background:#008069;color:#fff;border-color:#008069}
+.btn[href*="wa.me"]:hover{background:#006A58;border-color:#006A58}
+#contactForm button[type="submit"]{background:#008069;color:#fff;border-color:#008069}
+#contactForm button[type="submit"]:hover{background:#006A58;border-color:#006A58}
+.btn-ghost[href*="wa.me"],.btn-whatsapp-ghost[href*="wa.me"]{background:transparent;color:#008069;border-color:#008069}
+.btn-ghost[href*="wa.me"]:hover,.btn-whatsapp-ghost[href*="wa.me"]:hover{background:#008069;color:#fff;border-color:#008069}
