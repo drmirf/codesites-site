@@ -86,12 +86,13 @@ section{padding:5.5rem 0}
 .page-intro h1{font-size:clamp(2.1rem,1.3rem+3.4vw,3.4rem);letter-spacing:-.02em;max-width:18ch}
 .page-intro .lead{font-size:1.15rem;color:var(--muted);max-width:60ch;margin:1.2rem 0 0}
 
-/* ===================== SERVIÇOS (card-grid) ===================== */
-.card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
-  border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden}
-.svc{background:var(--paper);padding:2.1rem 1.9rem}
+/* ===================== SERVIÇOS (card-grid) — mesmo padrão visual e de hover de "Em destaque" (.seg-card) ===================== */
+.card-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.svc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-card);padding:1.8rem;
+  display:block;transition:border-color .15s,transform .15s}
+.svc:hover{border-color:var(--ink);transform:translateY(-2px)}
 .svc .n{font-family:var(--f-mono);font-size:.8rem;color:var(--accent)}
-.svc h3{font-size:1.18rem;margin:.7rem 0 .5rem}
+.svc h3{font-size:1.18rem;margin:.7rem 0 .5rem;color:var(--ink)}
 .svc p{color:var(--muted);font-size:.98rem;margin:0}
 
 /* serviços detalhados (cards grandes) */
@@ -194,9 +195,8 @@ section{padding:5.5rem 0}
 .footer-org{margin:.9rem 0 0;font-size:.85rem}
 .footer-org a{color:rgba(255,255,255,.55)}
 .footer-org a:hover{color:#fff}
-/* card de serviço quando é link (home) */
+/* card de serviço quando é link (home) — herda o visual do .svc, igual a .seg-card */
 a.svc{color:inherit;text-decoration:none}
-a.svc:hover h3{color:var(--accent)}
 
 /* utils */
 .divider{height:1px;background:var(--line);border:0;margin:0}
@@ -292,7 +292,8 @@ a.svc:hover h3{color:var(--accent)}
    Seletor por atributo cobre qualquer link wa.me (independe da classe do botão).
    Ao mudar estas cores, rodar 04-ativos-marca/site-codesites/qa-contraste.py. */
 .btn[href*="wa.me"]{background:#008069;color:#fff;border-color:#008069}
-.btn[href*="wa.me"]:hover{background:#006A58;border-color:#006A58}
+.btn[href*="wa.me"]:hover{background:#006A58;border-color:#006A58;color:#fff}
+.nav a.btn[href*="wa.me"],.nav a.btn[href*="wa.me"]:hover,.mobile-nav a.btn[href*="wa.me"]{color:#fff}
 #contactForm button[type="submit"]{background:#008069;color:#fff;border-color:#008069}
 #contactForm button[type="submit"]:hover{background:#006A58;border-color:#006A58}
 .btn-ghost[href*="wa.me"],.btn-whatsapp-ghost[href*="wa.me"]{background:transparent;color:#008069;border-color:#008069}
