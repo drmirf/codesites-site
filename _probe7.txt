@@ -1,0 +1,1 @@
+innerHTML='<p>Usamos cookies para medir como o site é usado e melhorar sua experiência. Você decide.</p>'
