@@ -270,7 +270,7 @@ section{padding:6rem 0}
   .footer-fine{flex-direction:column}
   .mobile-nav.open{display:block;position:fixed;inset:66px 0 0;background:var(--paper);z-index:55;padding:1.5rem;overflow:auto}
   .mobile-nav a{display:block;font-family:var(--f-display);font-size:1.4rem;font-weight:600;color:var(--ink);padding:1rem 0;border-bottom:1px solid var(--line)}
-  .mobile-nav .btn{margin-top:1.5rem;width:100%;color:#fff}
+  .mobile-nav .btn{margin-top:1.5rem;width:100%;color:#fff;display:flex;justify-content:center;border-bottom:0}
 }
 
 /* WhatsApp ghost (acessivel, WCAG AA): contorno verde, hover preenche */
