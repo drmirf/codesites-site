@@ -30,8 +30,8 @@ img,svg{max-width:100%}
 .site-header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.88);
   backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:1rem}
-.brand{display:flex;align-items:center;font-family:var(--f-display);font-weight:600;font-size:1.2rem;
-  color:var(--ink);letter-spacing:-.02em}
+.brand{display:flex;align-items:center}
+.brand img{height:26px;width:auto;display:block}
 .brand .cur{display:inline-block;width:.46em;height:1.05em;background:var(--accent);border-radius:2px;
   margin-left:.14em;transform:translateY(.12em)}
 .nav{display:flex;align-items:center;gap:1.7rem}
@@ -152,7 +152,7 @@ section{padding:6rem 0}
 .plan .divider{height:1px;background:var(--line);border:0;margin:0 0 1.4rem}
 .plan ul{list-style:none;margin:0 0 1.7rem;padding:0;display:grid;gap:.85rem;flex:1}
 .plan li{position:relative;padding-left:2rem;font-size:.97rem;line-height:1.45}
-.plan li::before{content:"✓";position:absolute;left:0;top:.05em;width:1.3rem;height:1.3rem;border-radius:50%;
+.plan li::before{content:"\2713";position:absolute;left:0;top:.05em;width:1.3rem;height:1.3rem;border-radius:50%;
   background:var(--accent-100);color:var(--accent-700);font-size:.72rem;font-weight:700;
   display:flex;align-items:center;justify-content:center}
 .plan li.from{padding-left:0;font-family:var(--f-mono);font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
@@ -183,7 +183,7 @@ section{padding:6rem 0}
 .compare .cfeat{font-weight:600;color:var(--ink)}
 .compare .cold{color:var(--muted)}
 .compare .cmine{background:var(--tint);color:var(--ink);font-weight:500}
-.compare .cmine::before{content:"✓";color:var(--accent);font-weight:700;margin-right:.5em}
+.compare .cmine::before{content:"\2713";color:var(--accent);font-weight:700;margin-right:.5em}
 
 /* ===================== CASES (portfólio) ===================== */
 .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
@@ -204,6 +204,25 @@ section{padding:6rem 0}
 .faq-item h3{font-size:1.1rem;margin:0 0 .5rem}
 .faq-item p{color:var(--muted);margin:0;font-size:1rem}
 
+/* ===================== FORM (contato) ===================== */
+.contact-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.6rem;align-items:start}
+.lead-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:2.2rem;
+  box-shadow:0 24px 56px -34px rgba(14,17,22,.3)}
+.field{margin-bottom:1.1rem}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.field label{display:block;font-size:.84rem;font-weight:600;margin-bottom:.4rem}
+.field input,.field textarea,.field select{width:100%;font-family:var(--f-body);font-size:.98rem;
+  padding:.78rem .9rem;border:1px solid var(--line);border-radius:var(--r-btn);background:var(--paper);color:var(--ink)}
+.field input::placeholder,.field textarea::placeholder{color:#9aa1ab}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-100)}
+.form-note{font-size:.8rem;color:var(--muted);margin-top:.8rem;font-family:var(--f-mono);letter-spacing:.02em;text-align:center}
+.contact-side{background:var(--mist);border:1px solid var(--line);border-radius:14px;padding:2rem}
+.contact-side h3{font-size:1.2rem;margin:0 0 .3rem}
+.contact-side .intro{color:var(--muted);font-size:.95rem;margin:0 0 .4rem}
+.contact-side .label{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.contact-side .block{padding:1.15rem 0;border-top:1px solid var(--line)}
+.contact-side .block p:last-child{margin:.2rem 0 0;font-weight:500}
+
 /* ===================== CTA BAND ===================== */
 .cta-band{background:linear-gradient(135deg,var(--accent),var(--accent-700));color:#fff;text-align:center;position:relative;overflow:hidden}
 .cta-band::before{content:"";position:absolute;inset:0;
@@ -219,6 +238,7 @@ section{padding:6rem 0}
 /* ===================== FOOTER ===================== */
 .site-footer{background:var(--ink);color:#fff;padding:4.5rem 0 2.5rem}
 .footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.5rem}
+.footer-brand img{height:24px;width:auto;display:block}
 .footer-brand .fb{font-family:var(--f-display);font-weight:600;font-size:1.3rem;color:#fff;letter-spacing:-.02em}
 .footer-brand .fb .cur{display:inline-block;width:.46em;height:1.05em;background:var(--accent);border-radius:2px;margin-left:.14em;transform:translateY(.12em)}
 .footer-brand p{color:rgba(255,255,255,.6);font-size:.95rem;max-width:34ch;margin:1.1rem 0 0}
