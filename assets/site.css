@@ -279,7 +279,7 @@ section{padding:6rem 0}
   .hero h1{max-width:none}
   .shot{display:none}
   .incl-grid{grid-template-columns:1fr}
-  .steps,.reasons,.footer-top,.work-grid{grid-template-columns:1fr}
+  .steps,.reasons,.footer-top{grid-template-columns:1fr}
   .field-row{grid-template-columns:1fr}
   .compare .crow{grid-template-columns:1fr}
   .compare .crow>div{padding:.45rem 1.2rem}
@@ -297,3 +297,11 @@ section{padding:6rem 0}
 .btn-ghost[href*="wa.me"],.btn-whatsapp-ghost[href*="wa.me"]{background:transparent;color:#008069;border-color:#008069}
 .btn-ghost[href*="wa.me"]:hover,.btn-whatsapp-ghost[href*="wa.me"]:hover{background:#008069;color:#fff;border-color:#008069}
 .nav a.btn[href*="wa.me"],.nav a.btn[href*="wa.me"]:hover,.mobile-nav a.btn[href*="wa.me"]{color:#fff}
+
+/* CASES — carrossel deslizante no mobile (mantém a seção curta e escalável) */
+@media(max-width:640px){
+  .work-grid{display:flex;gap:.9rem;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:.2rem 1.2rem 1.1rem;margin:0 -1.2rem;scrollbar-width:none}
+  .work-grid::-webkit-scrollbar{height:0}
+  .work-card{flex:0 0 80%;scroll-snap-align:start;padding:1.5rem}
+  #cases .sec-head>p:last-child::after{content:"\2192\00A0 arraste para ver todos";display:block;margin-top:.55rem;color:var(--accent);font-family:var(--f-mono);font-size:.78rem}
+}
